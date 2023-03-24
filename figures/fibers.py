@@ -22,15 +22,15 @@ class Fiber_cylinder:
     
     Методы
     ------
-    set_geometry(self, core_r, clad_r, z):
+    `set_geometry`(self, core_r, clad_r, z):
         Задает радиусы сердцевины, оболочки и длину волокна.
-    set_refr(self, core_n, clad_n):
+    `set_refr`(self, core_n, clad_n):
         Задает показатели преломления оболочки и сердцевины.
-    radius(self):
+    `radius`(self):
         Возвращает значения радиусов сердцевины и оболочки
-    refr(self):
+    `ref`r(self):
         Возвращает значения показателей преломления сердцевины и оболочки
-    find_normal(self, intersection_point):
+    `find_normal`(self, intersection_point):
         Возвращает нормаль к поверхности, направленную к центру цилиндра в заданной точке.
     """    
     
@@ -159,15 +159,15 @@ class Fiber_cone:
     
     Методы
     ------
-    set_geometry(self, z_max = 1, base_r = 0, top_r = 0):
+    `set_geometry`(self, z_max = 1, base_r = 0, top_r = 0):
         Задает геометрию волокна через длину и радиусы начала и конца 
-    set_refr(self, core_n, clad_n):
+    `set_refr`(self, core_n, clad_n):
         Задает показатели преломления оболочки и сердцевины.
-    radius(self):
+    `radius`(self):
         Возвращает значения радиусов сердцевины и оболочки
-    refr(self):
+    `refr`(self):
         Возвращает значения показателей преломления сердцевины и оболочки
-    find_normal(self, intersection_point):
+    `find_normal`(self, intersection_point):
         Возвращает нормаль к поверхности, направленную к центру цилиндра в заданной точке.
     """    
     diffusion : float
