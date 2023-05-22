@@ -262,3 +262,17 @@ class Fiber_cone:
         z = -self.c**2*(intersection_point[2] - self.base_r / self.c)
         result = -1 * np.array([x, y, z])/np.sqrt(x**2 + y**2 + z**2)
         return result # Возвращает нормаль к поверхности, направленную к центру цилиндра
+    def find_radius(self, z):
+        """Найти радиус конуса на определенной координате
+
+        Parameters
+        ----------
+        z : `float`
+            Координата z на которой считаем радиус конуса 
+
+        Returns
+        -------
+        `float`
+            Радиус конуса на заданной координате
+        """
+        return self.base_r - (self.base_r - self.top_r) / self.z_max * z 
